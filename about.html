@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Mylin & Co.</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f6f2eb;
+    color: #2f3033;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION */
+header {
+    background: #484B4E;
+    padding: 25px 6%;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: #d6ad78;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.reserve {
+    border: 1px solid #d6ad78;
+    padding: 13px 20px;
+}
+
+/* ABOUT */
+.about {
+    min-height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 8%;
+}
+
+.about-inner {
+    max-width: 850px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #b88b5b;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1;
+    color: #515866;
+    margin-bottom: 32px;
+}
+
+.intro {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #5c626c;
+    margin-bottom: 28px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto 22px;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.gold-line {
+    width: 60px;
+    height: 1px;
+    background: #d6ad78;
+    margin: 35px auto;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 27px;
+    border: 1px solid #b88b5b;
+    color: #8f6946;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .about {
+        padding: 65px 25px;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+}
+
+/* FORCE ABOUT PAGE TEXT BLACK */
+.about,
+.about * {
+    color: #000000 !important;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<a href="index.html" class="logo">MYLIN &amp; CO.</a>
+
+<div class="nav-links">
+    <a href="about.html">ABOUT</a>
+    <a href="packages.html">PACKAGES</a>
+    <a href="addons.html">ADD-ONS</a>
+    <a href="index.html#gallery">GALLERY</a>
+    <a href="index.html#contact">CONTACT</a>
+    <a href="index.html#contact" class="reserve">RESERVE YOUR DATE</a>
+</div>
+
+</nav>
+</header>
+
+<main class="about">
+
+<div class="about-inner">
+
+<div class="eyebrow" style="color:#000000 !important;">OUR STORY</div>
+
+<h1 style="color:#000000 !important;">More Than a Photo.<br>A Memory.</h1>
+
+<p class="intro" style="color:#000000 !important;">
+Mylin &amp; Co. was created with one purpose — to turn life's most meaningful
+celebrations into memories you can keep.
+</p>
+
+<div class="gold-line"></div>
+
+<p>
+Inspired by family and a love for beautiful celebrations, Mylin &amp; Co. brings an elevated, interactive mirror experience to weddings, graduations, corporate events, community celebrations, and life's unforgettable milestones.
+</p>
+
+<p>
+From the smallest details to the final keepsake, we believe your event deserves an experience that feels personal, polished, and uniquely yours.
+</p>
+
+<p>
+Based in Sheboygan, Wisconsin, we proudly serve celebrations throughout the surrounding area with an experience designed to bring people together, capture genuine moments, and leave guests with something worth remembering.
+</p>
+
+<div class="family-photo" style="margin:50px auto 35px; max-width:650px;">
+    <img src="images/family.jpeg"
+         alt="The family behind Mylin & Co."
+         style="width:100%; height:auto; display:block; border-radius:18px;">
+</div>
+
+<a href="index.html#contact" class="cta">RESERVE YOUR DATE</a>
+
+</div>
+
+</main>
+
+</body>
+</html>
+

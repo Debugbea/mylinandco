@@ -123,18 +123,21 @@ textarea {
 }
 
 .main-nav {
-  align-items: center;
-  display: flex;
-  gap: 34px;
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .main-nav a {
   color: #f5efe7;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   transition: color 0.25s ease;
+  white-space: nowrap;
 }
 
 .main-nav a:hover {
@@ -267,6 +270,8 @@ textarea {
   border-radius: 150px 150px 18px 18px;
   box-shadow: var(--shadow);
   padding: 18px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .hero-image {
@@ -959,5 +964,130 @@ textarea {
     .lightbox-close {
         top: 10px;
         right: 15px;
+        font-size: 36px;
     }
+    
+    /* FINAL DESKTOP HERO LAYOUT */
+@media (min-width: 901px) {
+  .hero.hero-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 520px);
+    align-items: center;
+    justify-content: initial;
+    gap: 60px;
+    min-height: 620px;
+    padding: 100px 7% 80px;
+    text-align: left;
+  }
+
+  .hero.hero-section .hero-content {
+    width: 100%;
+    max-width: 650px;
+    margin: 0;
+  }
+
+  .hero.hero-section .hero-image-wrap {
+    width: 100%;
+    max-width: 520px;
+    justify-self: end;
+  }
+
+  .hero.hero-section .hero-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* FIX DESKTOP NAVIGATION */
+@media (min-width: 900px) {
+    .nav-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .brand {
+        font-size: 22px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
+
+    .main-nav a {
+        font-size: 10px;
+        letter-spacing: 1px;
+        white-space: nowrap !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .nav-container {
+        max-width: 1400px !important;
+        width: 100% !important;
+        padding: 0 24px !important;
+    }
+
+    .brand {
+        font-size: 22px !important;
+        white-space: nowrap !important;
+    }
+
+    .main-nav {
+        gap: 14px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .main-nav a {
+        font-size: 10px !important;
+        letter-spacing: 0.7px !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* Signature Experience card text fix */
+.package-card.featured,
+.package-card.featured p,
+.package-card.featured li {
+    color: #f5efe7 !important;
+}
+
+/* Make Signature Experience list readable */
+.package-card.featured ul li {
+    color: #ffffff !important;
+}
+
+/* SIGNATURE EXPERIENCE - force text to white */
+.package-grid > div:nth-child(2),
+.package-grid > div:nth-child(2) p,
+.package-grid > div:nth-child(2) ul,
+.package-grid > div:nth-child(2) li {
+    color: #ffffff !important;
+}
+/* SIGNATURE EXPERIENCE - force text to white */
+.package-grid > div:nth-child(2),
+.package-grid > div:nth-child(2) p,
+.package-grid > div:nth-child(2) ul,
+.package-grid > div:nth-child(2) li {
+    color: #ffffff !important;
+}
+
+/* Make homepage mirror image smaller */
+.hero-image-wrap {
+    max-width: 430px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.hero-image {
+    width: 100% !important;
+    height: auto !important;
 }
